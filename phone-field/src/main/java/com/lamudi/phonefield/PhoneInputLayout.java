@@ -1,10 +1,11 @@
 package com.lamudi.phonefield;
 
 import android.content.Context;
-import android.support.design.widget.TextInputLayout;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.ViewGroup;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 /**
  * Implementation of PhoneField that uses {@link TextInputLayout}
