@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Spinner
-        android:layout_width="@dimen/spinner_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_large"
         android:dropDownWidth="@dimen/spinner_height"
