@@ -6,6 +6,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_large"
         android:dropDownWidth="@dimen/spinner_height"
+        android:background="@android:color/transparent"
         android:popupBackground="@color/pf_white"
         android:tag="@string/com_lamudi_phonefield_flag_spinner" />
 

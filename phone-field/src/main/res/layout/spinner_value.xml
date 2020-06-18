@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_small"
     android:paddingTop="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_small"
     android:paddingBottom="@dimen/padding_medium">
 
-  <ImageView
-      android:id="@+id/flag"
-      android:layout_width="@dimen/flag_size"
-      android:layout_height="@dimen/flag_size"
-      />
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:contentDescription="@string/country_flag"
+        tools:src="@drawable/country_flag_gh" />
+
+    <TextView
+        android:id="@+id/dial_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small"
+        tools:text="+233" />
 </LinearLayout>
