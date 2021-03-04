@@ -8,8 +8,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.lamudi.phonefield.Country;
 import com.lamudi.phonefield.PhoneEditText;
 import com.lamudi.phonefield.PhoneInputLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     final PhoneEditText phoneEditText = (PhoneEditText) findViewById(R.id.edit_text);
 
     CustomPhoneInputLayout customPhoneInputLayout = new CustomPhoneInputLayout(this, "EG");
+    List<Country> countries = new ArrayList<>();
+    countries.add(new Country("gh", "Ghana (Gaana)", 233));
+    customPhoneInputLayout.setAllowedCountries(countries);
 
     final ViewGroup viewGroup = (ViewGroup) ((ViewGroup) this
         .findViewById(android.R.id.content)).getChildAt(0);
