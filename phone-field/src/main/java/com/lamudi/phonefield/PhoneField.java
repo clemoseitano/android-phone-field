@@ -215,8 +215,8 @@ public abstract class PhoneField extends LinearLayout {
      * @param countryCode the country code
      */
     public void setDefaultCountry(String countryCode) {
-        for (int i = 0; i < Countries.COUNTRIES.size(); i++) {
-            Country country = Countries.COUNTRIES.get(i);
+        for (int i = 0; i < allowedCountries.size(); i++) {
+            Country country = allowedCountries.get(i);
             if (country.getCode().equalsIgnoreCase(countryCode)) {
                 mCountry = country;
                 mDefaultCountryPosition = i;
@@ -226,8 +226,8 @@ public abstract class PhoneField extends LinearLayout {
     }
 
     private void selectCountry(int dialCode) {
-        for (int i = 0; i < Countries.COUNTRIES.size(); i++) {
-            Country country = Countries.COUNTRIES.get(i);
+        for (int i = 0; i < allowedCountries.size(); i++) {
+            Country country = allowedCountries.get(i);
             if (country.getDialCode() == dialCode) {
                 mCountry = country;
                 mSpinner.setSelection(i);
